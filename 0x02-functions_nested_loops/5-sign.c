@@ -1,32 +1,21 @@
 #include "main.h"
 /**
- * print_sign - function that print signs
- *
- * @n: function parameter
- *
- * Return: 1, 0 and -1
+ * print_sign - checks for +ve -ve 0
+ * @n: First operand
+ * Return: 1 or 0
  */
 int print_sign(int n)
 {
-if (n > 0)
+if (n  > 0)
 {
 _putchar('+');
-_putchar(',');
-_putchar(' ');
 return (1);
 }
-else if (n == 0)
-{
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-return (0);
-}
-else
+else if (n < 0)
 {
 _putchar('-');
-_putchar(',');
-_putchar(' ');
 return (-1);
 }
+_putchar(48);
+return (0);
 }
